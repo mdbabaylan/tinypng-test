@@ -11,7 +11,7 @@ module.exports = defineConfig({
         pathRewrite: { '^/shrink': '/shrink' },
         secure: false,
         headers: {
-          Authorization: `Basic ${Buffer.from('api:DrfWrkcr0pPnR20dQ5pDq8q7Tys1Gf1H').toString('base64')}`,
+          Authorization: `Basic ${Buffer.from('api:apiKey').toString('base64')}`,
         }
       },
       '/output': {
@@ -20,7 +20,7 @@ module.exports = defineConfig({
         // pathRewrite: { '^/output': '/output' },
         secure: false,
         headers: {
-          Authorization: `Basic ${Buffer.from('api:DrfWrkcr0pPnR20dQ5pDq8q7Tys1Gf1H').toString('base64')}`,
+          Authorization: `Basic ${Buffer.from('api:apiKey').toString('base64')}`,
         }
       },  
     }
